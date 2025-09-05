@@ -1,76 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coleta de Eletrônicos</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coleta Eletrônica — Educação e Impacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Header -->
-<header>
-    <div class="logo">♻️ Coleta Eletrônica</div>
-    <nav>
-        <a href="#hero">Home</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#coleta">Pontos de Coleta</a>
+<!-- NAV mínima -->
+<header class="navbar">
+    <div class="brand">♻️ Coleta LAGUNA</div>
+    <nav class="nav">
+        <a href="#hero">Início</a>
+        <a href="#educacao">Educação</a>
         <a href="#contato">Contato</a>
     </nav>
 </header>
 
-<!-- Seção Hero -->
-<section id="hero">
-    <h1>Recicle seu lixo eletrônico</h1>
-    <p>Ajude o planeta descartando seus aparelhos eletrônicos corretamente.</p>
-    <button onclick="scrollToSection('beneficios')">Saiba como</button>
-</section>
-
-<!-- Seção Benefícios -->
-<section id="beneficios">
-    <h2>Benefícios da Reciclagem</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="images/polucao.png" alt="Reduz Poluição">
-            <h3>Reduz Poluição</h3>
-            <p>Evita que metais pesados contaminem o solo e a água.</p>
-        </div>
-        <div class="card">
-            <img src="images/recursos.png" alt="Reaproveita Recursos">
-            <h3>Reaproveita Recursos</h3>
-            <p>Recupera metais valiosos como ouro, prata e cobre.</p>
-        </div>
-        <div class="card">
-            <img src="images/saude.png" alt="Protege a Saúde">
-            <h3>Protege a Saúde</h3>
-            <p>Reduz impactos nocivos à saúde de pessoas e animais.</p>
-        </div>
+<!-- HERO -->
+<section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+        <h1 class="headline">
+            <span class="kinetic">Reciclagem de Lixo Eletrônico</span>
+            <span class="kinetic accent">Recicle hoje, garanta um amanhã melhor.</span>
+        </h1>
+        <p class="subtitle">Use pontos de coleta adequados e evite que metais pesados contaminem o ambiente.</p>
+        <button id="ctaSaibaMais" class="cta" aria-label="Quero fazer a diferença">
+            <span>Quero fazer a diferença</span>
+            <svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4v14m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
     </div>
 </section>
 
-<!-- Seção Pontos de Coleta -->
-<section id="coleta">
-    <h2>Pontos de Coleta</h2>
-    <p>Encontre locais próximos para descartar seus aparelhos:</p>
-    <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.617514989217!2d-48.6167!3d-28.4712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527d3c3d3d3d3d3%3A0x3d3d3d3d3d3d3d3d3!2sRua%20Ant%C3%B4nio%20Borges%2C%20s%2Fn%20-%20Oficinas%2C%20Tubar%C3%A3o%20-%20SC%2C%2088702-600!5e0!3m2!1spt-BR!2sbr!4v1632876543210!5m2!1spt-BR!2sbr"
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
+<!-- EDUCAÇÃO -->
+<section id="educacao" class="section beige">
+    <div class="container">
+
+        <!-- Bloco atualizado com nova imagem -->
+        <article class="feature feature-left reveal">
+            <div class="feature-media">
+                <img src="images/poluicao.png" alt="Ícone redução de poluição">
+            </div>
+            <div class="feature-text">
+                <h2>Reduz Poluição</h2>
+                <p>
+                    O descarte incorreto de aparelhos libera substâncias como chumbo, cádmio e mercúrio, que podem infiltrar no solo e alcançar lençóis freáticos.
+                    Ao levar seu lixo eletrônico aos pontos de coleta, você interrompe esse ciclo de contaminação e evita danos à fauna, flora e à saúde humana.
+                </p>
+            </div>
+        </article>
+
+        <article class="feature feature-right reveal">
+            <div class="feature-media">
+                <img src="images/recursos.png" alt="Ícone reaproveitamento de recursos">
+            </div>
+            <div class="feature-text">
+                <h2>Reaproveitamento de Recursos</h2>
+                <p>
+                    Placas, cabos e componentes contêm metais valiosos como cobre, prata, ouro e paládio. A reciclagem possibilita recuperar esses materiais,
+                    reduzindo a extração mineral e o impacto ambiental associado ao garimpo.
+                </p>
+            </div>
+        </article>
+
+        <article class="feature feature-left reveal">
+            <div class="feature-media">
+                <img src="images/saude.png" alt="Ícone proteção à saúde">
+            </div>
+            <div class="feature-text">
+                <h2>Protege a Saúde</h2>
+                <p>
+                    A exposição a substâncias tóxicas do e-lixo está ligada a problemas respiratórios, neurológicos e dermatológicos. Ao descartar corretamente,
+                    você reduz riscos em comunidades próximas a lixões e para trabalhadores informais que lidam com resíduos sem proteção.
+                </p>
+            </div>
+        </article>
+
+    </div>
 </section>
 
-<!-- Seção Contato -->
-<section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato pelo WhatsApp ou telefone:</p>
-    <p><strong>(48) 99633-4659</strong></p>
-    <a href="https://wa.me/5548996334659" target="_blank">
-        <button>Chamar no WhatsApp</button>
-    </a>
+<!-- CONTATO -->
+<section id="contato" class="section beige">
+    <div class="container contact">
+        <h2>Contato</h2>
+        <p>Fale direto pelo telefone ou WhatsApp:</p>
+        <p class="phone"><strong>(48) 99633-4659</strong></p>
+        <a class="cta" href="https://wa.me/5548996334659" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    </div>
 </section>
 
-<!-- Footer -->
-<footer>
-    <p>© 2025 Coleta Eletrônica | Criado com 💚</p>
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Coleta Eletrônica — minimal & educativo.</p>
+    </div>
 </footer>
 
 <script src="script.js"></script>
