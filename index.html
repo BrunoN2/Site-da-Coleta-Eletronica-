@@ -9,20 +9,26 @@
 </head>
 <body>
 
-<!-- NAV mínima -->
+<!-- NAVBAR (brand + hambúrguer) -->
 <header class="navbar">
     <div class="brand">♻️ Coleta LAGUNA</div>
     <nav class="nav">
-        <a href="#hero">Início</a>
-        <a href="#educacao">Educação</a>
-        <a href="#contato">Contato</a>
+        <!-- botão hambúrguer -->
+        <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuDrop">☰</button>
+
+        <!-- menu dropdown (aparece ao clicar) -->
+        <ul id="menuDrop" class="nav-links" role="menu" aria-hidden="true">
+            <li role="none"><a role="menuitem" href="#hero">Início</a></li>
+            <li role="none"><a role="menuitem" href="#educacao">Educação</a></li>
+            <li role="none"><a role="menuitem" href="#contato">Contato</a></li>
+        </ul>
     </nav>
 </header>
 
 <!-- HERO -->
 <section id="hero" class="hero">
     <div class="hero-overlay"></div>
-    <div class="hero-inner">
+    <div class="hero-inner reveal">
         <h1 class="headline">
             <span class="kinetic">Reciclagem de Lixo Eletrônico</span>
             <span class="kinetic accent">Recicle hoje, garanta um amanhã melhor.</span>
@@ -41,7 +47,6 @@
 <section id="educacao" class="section beige">
     <div class="container">
 
-        <!-- Bloco atualizado com nova imagem -->
         <article class="feature feature-left reveal">
             <div class="feature-media">
                 <img src="images/poluicao.png" alt="Ícone redução de poluição">
@@ -49,8 +54,10 @@
             <div class="feature-text">
                 <h2>Reduz Poluição</h2>
                 <p>
-                    O descarte incorreto de aparelhos libera substâncias como chumbo, cádmio e mercúrio, que podem infiltrar no solo e alcançar lençóis freáticos.
-                    Ao levar seu lixo eletrônico aos pontos de coleta, você interrompe esse ciclo de contaminação e evita danos à fauna, flora e à saúde humana.
+                    O descarte incorreto de aparelhos libera substâncias como chumbo, cádmio e mercúrio,
+                    que podem infiltrar no solo e alcançar lençóis freáticos. Ao levar seu e-lixo aos
+                    pontos de coleta, você interrompe esse ciclo de contaminação e evita danos à fauna,
+                    flora e à saúde humana.
                 </p>
             </div>
         </article>
@@ -62,8 +69,9 @@
             <div class="feature-text">
                 <h2>Reaproveitamento de Recursos</h2>
                 <p>
-                    Placas, cabos e componentes contêm metais valiosos como cobre, prata, ouro e paládio. A reciclagem possibilita recuperar esses materiais,
-                    reduzindo a extração mineral e o impacto ambiental associado ao garimpo.
+                    Placas, cabos e componentes contêm metais valiosos como cobre, prata, ouro e paládio.
+                    A reciclagem possibilita recuperar esses materiais, reduzindo a extração mineral e o
+                    impacto ambiental associado.
                 </p>
             </div>
         </article>
@@ -75,8 +83,9 @@
             <div class="feature-text">
                 <h2>Protege a Saúde</h2>
                 <p>
-                    A exposição a substâncias tóxicas do e-lixo está ligada a problemas respiratórios, neurológicos e dermatológicos. Ao descartar corretamente,
-                    você reduz riscos em comunidades próximas a lixões e para trabalhadores informais que lidam com resíduos sem proteção.
+                    A exposição a substâncias tóxicas do e-lixo está ligada a problemas respiratórios,
+                    neurológicos e dermatológicos. O descarte correto reduz riscos às comunidades e
+                    trabalhadores informais.
                 </p>
             </div>
         </article>
@@ -88,9 +97,10 @@
 <section id="contato" class="section beige">
     <div class="container contact">
         <h2>Contato</h2>
-        <p>Fale direto pelo telefone ou WhatsApp:</p>
-        <p class="phone"><strong>(48) 99633-4659</strong></p>
-        <a class="cta" href="https://wa.me/5548996334659" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <p>Fale com a gente pelo WhatsApp:</p>
+        <a class="whatsapp-badge" href="https://wa.me/5548996334659" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+            <img src="images/whatsapp.png" alt="WhatsApp" />
+        </a>
     </div>
 </section>
 
