@@ -13,10 +13,7 @@
 <header class="navbar">
     <div class="brand">♻️ Coleta LAGUNA</div>
     <nav class="nav">
-        <!-- botão hambúrguer -->
         <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuDrop">☰</button>
-
-        <!-- menu dropdown (aparece ao clicar) -->
         <ul id="menuDrop" class="nav-links" role="menu" aria-hidden="true">
             <li role="none"><a role="menuitem" href="#hero">Início</a></li>
             <li role="none"><a role="menuitem" href="#educacao">Educação</a></li>
@@ -55,9 +52,7 @@
                 <h2>Reduz Poluição</h2>
                 <p>
                     O descarte incorreto de aparelhos libera substâncias como chumbo, cádmio e mercúrio,
-                    que podem infiltrar no solo e alcançar lençóis freáticos. Ao levar seu e-lixo aos
-                    pontos de coleta, você interrompe esse ciclo de contaminação e evita danos à fauna,
-                    flora e à saúde humana.
+                    que podem infiltrar no solo e alcançar lençóis freáticos.
                 </p>
             </div>
         </article>
@@ -70,8 +65,7 @@
                 <h2>Reaproveitamento de Recursos</h2>
                 <p>
                     Placas, cabos e componentes contêm metais valiosos como cobre, prata, ouro e paládio.
-                    A reciclagem possibilita recuperar esses materiais, reduzindo a extração mineral e o
-                    impacto ambiental associado.
+                    A reciclagem possibilita recuperar esses materiais, reduzindo a extração mineral.
                 </p>
             </div>
         </article>
@@ -84,8 +78,7 @@
                 <h2>Protege a Saúde</h2>
                 <p>
                     A exposição a substâncias tóxicas do e-lixo está ligada a problemas respiratórios,
-                    neurológicos e dermatológicos. O descarte correto reduz riscos às comunidades e
-                    trabalhadores informais.
+                    neurológicos e dermatológicos. O descarte correto reduz riscos à população.
                 </p>
             </div>
         </article>
@@ -99,7 +92,17 @@
         <h2>Contato</h2>
         <p>Fale com a gente pelo WhatsApp:</p>
         <a class="whatsapp-badge" href="https://wa.me/5548996334659" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
-            <img src="images/whatsapp.png" alt="WhatsApp" />
+            <!-- Ícone WhatsApp em SVG inline -->
+            <svg viewBox="0 0 256 256" class="wa-svg" aria-hidden="true">
+                <defs>
+                    <linearGradient id="waGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#25D366"/>
+                        <stop offset="1" stop-color="#22BF5B"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="128" cy="128" r="110" fill="url(#waGrad)"/>
+                <path fill="#fff" d="M170.7 146.2c-1.7-.9-10-4.9-11.5-5.5-1.5-.6-2.6-.9-3.7.9-1.1 1.7-4.3 5.5-5.2 6.7-1 1.1-1.9 1.3-3.6.4-1.7-.9-7.1-2.6-13.5-8.2-5-4.5-8.4-10-9.4-11.6-.9-1.7-.1-2.6.8-3.5.8-.8 1.7-2.1 2.6-3.1.9-1 .9-1.7 1.3-2.8.4-1.1.2-2.1-.1-3-.4-.9-3.7-8.9-5.1-12.1-1.4-3.2-2.7-2.7-3.7-2.7-.9 0-2-.1-3.1-.1-1.1 0-3 .4-4.6 2.1-1.6 1.7-6 5.9-6 14.4 0 8.5 6.1 16.8 7 18 1 1.1 11.9 18.2 29 25 4.1 1.6 7.4 2.5 9.9 3.2 4.2 1.3 8.1 1.1 11.1.7 3.4-.5 10.4-4.3 11.9-8.5 1.5-4.2 1.5-7.8 1-8.5-.5-.7-1.6-1.1-3.3-2z"/>
+            </svg>
         </a>
     </div>
 </section>
